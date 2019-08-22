@@ -12,7 +12,7 @@ export default class App extends Component{
     render(){
       return (
         <View style = {StyleSheet.container}>
-          <Text>We have no Friends!</Text>
+          <Text>We have { this.props.screenProps.currentFriends.length } friends! Friends!</Text>
           <Button 
           title ="Add some Friends"
           onPress={() => this.props.navigation.navigate('Friends')}/>
